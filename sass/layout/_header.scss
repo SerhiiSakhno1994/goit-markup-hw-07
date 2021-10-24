@@ -20,11 +20,13 @@
   align-items: center;
 }
 .header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-title-color);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  // color: var(--secondary-title-color);
+  @include font(null, 500, 14px, 1.14, 0.02em, var(--secondary-title-color));
+
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
@@ -43,11 +45,12 @@
   }
 }
 .header-contacts-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primery-text-color);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  // color: var(--primery-text-color);
+  @include font(null, 500, 14px, 1.14, 0.02em, var(--primery-text-color));
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;

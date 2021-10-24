@@ -7,8 +7,9 @@
 }
 
 .signup-title {
-  display: flex;
-  justify-content: left;
+  // display: flex;
+  // justify-content: left;
+  @include flex(flex, null, left, null, null);
 }
 .signup-email {
   padding: 15px 16px;
@@ -29,23 +30,20 @@
   display: flex;
 }
 
-// .signup-btn:focus,
-// .signup-btn:hover {
-//   color: var(--primery-title-color);
-// }
-
 .signup-btn {
   padding: 10px 27px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.87;
+  // letter-spacing: 0.06em;
+  // color: var(--primery-title-color);
+  @include font(null, 700, 16px, 1.87, 0.06em, var(--primery-title-color));
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
+  // display: flex;
+  // align-items: center;
+  // text-align: center;
+  @include flex(flex, center, center, null, null);
 
-  color: var(--primery-title-color);
   background-color: var(--accent-color);
   &:focus,
   &:hover {

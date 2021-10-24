@@ -1,6 +1,6 @@
 .footer {
   background: var(--hero-background-color);
-  font-family: Roboto, sans-serif;
+  font-family: var(--text-style-rel);
   font-style: normal;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -22,7 +22,7 @@
 .footer-contacts-link {
   font-size: 14px;
   line-height: 1.14;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contacts-link-color);
 }
 
 .adressat {
@@ -80,14 +80,6 @@
   }
 }
 
-// .footer-soc-blok:last-child {
-//   margin-right: 0;
-// }
-
-// .footer-link:hover,
-// .footer-link:focus {
-//   background-color: var(--accent-color);
-// }
 .footer-icon-svg {
   fill: var(--primery-title-color);
 }
