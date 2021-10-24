@@ -1,6 +1,6 @@
 .footer {
   background: var(--hero-background-color);
-  font-family: var(--text-style-rel);
+  font-family: var(--text-style-btn);
   font-style: normal;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -10,16 +10,16 @@
   margin-top: 20px;
 }
 
-.footer-item {
+.address-footer__item {
   &:not(:first-child) {
     margin-top: 9px;
   }
 }
 
-.logo-white {
+.logo_white {
   color: var(--primery-title-color);
 }
-.footer-contacts-link {
+.address-footer__link {
   font-size: 14px;
   line-height: 1.14;
   color: var(--footer-contacts-link-color);
@@ -28,10 +28,10 @@
 .adressat {
   color: var(--primery-title-color);
 }
-.footer-box {
+.footer__box {
   margin-right: 70px;
 }
-.footer-strong {
+.footer_strong {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -41,7 +41,7 @@
   text-transform: uppercase;
   color: var(--primery-title-color);
 }
-.footer-blok {
+.footer__blok {
   display: flex;
   align-items: baseline;
 }
@@ -50,11 +50,11 @@
   text-align: left;
 }
 
-.footer-soc-list {
+.soc-list {
   padding: 0;
   display: flex;
 }
-.footer-link {
+.soc-list__link {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,7 +71,7 @@
     background-color: var(--accent-color);
   }
 }
-.footer-soc-blok {
+.soc-list__blok {
   justify-content: center;
   margin-right: 10px;
 
@@ -80,6 +80,6 @@
   }
 }
 
-.footer-icon-svg {
+.soc-list__svg {
   fill: var(--primery-title-color);
 }
