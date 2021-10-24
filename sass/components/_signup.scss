@@ -29,10 +29,10 @@
   display: flex;
 }
 
-.signup-btn:focus,
-.signup-btn:hover {
-  color: var(--primery-title-color);
-}
+// .signup-btn:focus,
+// .signup-btn:hover {
+//   color: var(--primery-title-color);
+// }
 
 .signup-btn {
   padding: 10px 27px;
@@ -47,6 +47,10 @@
 
   color: var(--primery-title-color);
   background-color: var(--accent-color);
+  &:focus,
+  &:hover {
+    color: var(--primery-title-color);
+  }
 }
 
 .signup-btn-text {

@@ -72,6 +72,10 @@
   flex-direction: column;
 
   margin-bottom: 10px;
+
+  &:nth-child(5) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-text {
@@ -105,20 +109,31 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--accent-color);
+  }
+
+  &:focus + .form-icon,
+  &:hover + .form-icon {
+    color: var(--accent-color);
+    fill: currentColor;
+  }
 }
 
-.form-input:focus,
-.form-input:hover,
-.form-textarea:hover,
-.form-textarea:focus {
-  border: 1px solid var(--accent-color);
-}
+// .form-input:focus,
+// .form-input:hover,
+// .form-textarea:hover,
+// .form-textarea:focus {
+//   border: 1px solid var(--accent-color);
+// }
 
-.form-input:focus + .form-icon,
-.form-input:hover + .form-icon {
-  color: var(--accent-color);
-  fill: currentColor;
-}
+// .form-input:focus + .form-icon,
+// .form-input:hover + .form-icon {
+//   color: var(--accent-color);
+//   fill: currentColor;
+// }
 
 .form-icon {
   position: absolute;
@@ -146,11 +161,16 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
-.form .form-field:nth-child(5) {
-  margin-bottom: 20px;
-}
+// .form .form-field:nth-child(5) {
+//   margin-bottom: 20px;
+// }
 
 .form-link {
   margin-left: 5px;
@@ -186,22 +206,35 @@
 
 .form-checkbox {
   position: absolute;
+  &:focus + .checkbox,
+  &:hover + .checkbox {
+    fill: var(--accent-color);
+  }
+  &:checked + .checkbox {
+    border-radius: 2px;
+
+    fill: var(--accent-color);
+
+    background-color: var(--accent-color);
+    background-image: url(../images/check.svg);
+    background-size: contain;
+  }
 }
 
-.form-checkbox:focus + .checkbox,
-.form-checkbox:hover + .checkbox {
-  fill: var(--accent-color);
-}
+// .form-checkbox:focus + .checkbox,
+// .form-checkbox:hover + .checkbox {
+//   fill: var(--accent-color);
+// }
 
-.form-checkbox:checked + .checkbox {
-  border-radius: 2px;
+// .form-checkbox:checked + .checkbox {
+//   border-radius: 2px;
 
-  fill: var(--accent-color);
+//   fill: var(--accent-color);
 
-  background-color: var(--accent-color);
-  background-image: url(../images/check.svg);
-  background-size: contain;
-}
+//   background-color: var(--accent-color);
+//   background-image: url(../images/check.svg);
+//   background-size: contain;
+// }
 
 .checkbox {
   margin-right: 7px;
