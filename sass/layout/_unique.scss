@@ -1,0 +1,40 @@
+.unique {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.unique-list {
+  display: flex;
+  margin-left: -30px;
+}
+.unique-item {
+  width: 270px;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+.icon {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  align-items: center;
+  justify-content: center;
+}
+.unique-svg {
+  width: 70px;
+  height: 70px;
+}
+.unique-small-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 10px;
+}
+
+.unique-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
