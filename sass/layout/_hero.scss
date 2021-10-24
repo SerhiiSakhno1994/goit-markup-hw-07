@@ -13,21 +13,16 @@
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 50px;
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  //  color: var(--primery-title-color);
   @include font(null, 900, 44px, 1.36, null, var(--primery-title-color));
-
   text-align: center;
   text-transform: uppercase;
 }
 
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
   cursor: pointer;
   font-weight: bold;

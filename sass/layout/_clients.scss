@@ -1,8 +1,8 @@
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
   margin: 0;
   padding: 0;
   padding-inline-start: 0;
@@ -11,7 +11,7 @@
   // justify-content: center;
   @include flex(flex, null, center, null, null);
 }
-.clients-blok {
+.clients__item {
   display: flex;
   flex-wrap: wrap;
   @include flex(flex, null, null, null, wrap);
@@ -22,10 +22,7 @@
   }
 }
 
-.clients-link {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+.clients__link {
   @include flex(flex, center, center, null, null);
   width: 170px;
   height: 92px;
@@ -44,7 +41,7 @@
   }
 }
 
-.clients-svg {
+.clients__svg {
   width: 106px;
   height: 60px;
   fill: currentColor;

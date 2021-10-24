@@ -2,27 +2,27 @@
   padding-top: 47px;
   padding-bottom: 94px;
 }
-.do-list {
+.do__list {
   display: flex;
   flex-basis: calc(100% / 3 - 90px);
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.do-item {
+.do__item {
   margin-left: 30px;
   margin-top: 30px;
 }
-.do-title {
+.do__title {
   margin-bottom: 50px;
 }
 
-.do-thumb {
+.do__thumb {
   position: relative;
   display: flex;
   justify-content: center;
 }
-.do-description {
+.do__description {
   position: absolute;
   bottom: 0;
   left: 0;

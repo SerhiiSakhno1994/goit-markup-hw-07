@@ -2,16 +2,14 @@
   margin-left: auto;
 }
 
-.signup-label {
+.signup__label {
   margin-right: 12px;
 }
 
-.signup-title {
-  // display: flex;
-  // justify-content: left;
+.signup__title {
   @include flex(flex, null, left, null, null);
 }
-.signup-email {
+.signup__email {
   padding: 15px 16px;
 
   height: 50px;
@@ -26,22 +24,15 @@
   color: var(--primery-title-color);
 }
 
-.footer-form {
+.signup__form {
   display: flex;
 }
 
-.signup-btn {
+.signup__btn {
   padding: 10px 27px;
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.87;
-  // letter-spacing: 0.06em;
-  // color: var(--primery-title-color);
+
   @include font(null, 700, 16px, 1.87, 0.06em, var(--primery-title-color));
 
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
   @include flex(flex, center, center, null, null);
 
   background-color: var(--accent-color);
@@ -51,10 +42,10 @@
   }
 }
 
-.signup-btn-text {
+.signup__btn_margin {
   margin-right: 10px;
 }
 
-.signup-svg {
+.signup__svg {
   fill: var(--primery-title-color);
 }
