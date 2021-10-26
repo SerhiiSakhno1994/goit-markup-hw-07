@@ -177,15 +177,17 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  outline: none;
 }
 
 .form-checkbox {
   position: absolute;
-  &:focus + .checkbox,
-  &:hover + .checkbox {
+  &:focus + .checkbox__item,
+  &:hover + .checkbox__item {
     fill: var(--accent-color);
   }
-  &:checked + .checkbox {
+
+  &:checked + .checkbox__item {
     border-radius: 2px;
 
     fill: var(--accent-color);
@@ -196,7 +198,7 @@
   }
 }
 
-.checkbox {
+.checkbox__item {
   margin-right: 7px;
   width: 16px;
   height: 15px;

@@ -301,18 +301,19 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  outline: none;
 }
 
 .form-checkbox {
   position: absolute;
 }
 
-.form-checkbox:focus + .checkbox,
-.form-checkbox:hover + .checkbox {
+.form-checkbox:focus + .checkbox__item,
+.form-checkbox:hover + .checkbox__item {
   fill: var(--accent-color);
 }
 
-.form-checkbox:checked + .checkbox {
+.form-checkbox:checked + .checkbox__item {
   border-radius: 2px;
   fill: var(--accent-color);
   background-color: var(--accent-color);
@@ -320,7 +321,7 @@ body {
   background-size: contain;
 }
 
-.checkbox {
+.checkbox__item {
   margin-right: 7px;
   width: 16px;
   height: 15px;
